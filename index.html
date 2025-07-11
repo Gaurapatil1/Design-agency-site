@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Desine Website</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+
+    }
+
+    header {
+        background-color: #b17c7c;
+        color: white;
+        padding: 10px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+
+    }
+
+    nav .left {
+        float: left;
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(124, 37, 37);
+        margin-right: 20px;
+
+    }
+
+    nav .right ul {
+
+        list-style: none;
+        margin: 66;
+        padding: 546;
+        display: flex;
+        gap: 15px;
+        left: 60%;
+        position: relative;
+        caret-color: aqua;
+
+    }
+
+    nav .right ul li {
+        color: white;
+        cursor: pointer;
+
+    }
+
+
+    .hero {
+        height: 100vh;
+        background: linear-gradient(to right, #b17c7c, #f4f4f4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-content button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .portfolio {
+        padding: 50px 20px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact {
+        padding: 50px 20px;
+        background-color: #b17c7c;
+        color: white;
+        text-align: center;
+    }
+
+    .contact form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .contact button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .testimonials {
+        padding: 50px 20px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    .testimonial {
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer .social-links a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 2rem;
+        }
+
+        .portfolio-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .practice {
+        padding: 50px 20px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .sectionclass {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sectionclass img {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .sectionclass h2 {
+        font-size: 2em;
+        color: #333;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <!-- Fixed 'dev' to 'div' and 'calss' to 'class' -->
+            <div class="left">Design Agency</div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Freelance Portfolio</h1>
+                <p>I design and develop modern, responsive websites for businesses and individuals.</p>
+                <button>Hire Me</button>
+            </div>
+        </section>
+        <section class="practice">
+            <h2>Sample Website Previews</h2>
+            <div class="sectionclass">
+                <img src="https://www.bing.com/images/search?q=images&id=EECFBB7F4320921571A539DB459CACFE9D1EC242&FORM=IACFIR" alt="Website Screenshot 1">
+                <img src="project2.jpg" alt="Website Screenshot 2">
+                <img src="project3.jpg" alt="Website Screenshot 3">
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="testimonials">
+            <h2>What My Clients Say</h2>
+            <div class="testimonial">
+                <p>"Great work! Delivered on time and exceeded expectations."</p>
+                <h4>- Client Name</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Very professional and easy to work with. Highly recommended!"</p>
+                <h4>- Client Name</h4>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
